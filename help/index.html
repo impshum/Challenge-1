@@ -18,7 +18,7 @@
           <button class="plod">STOP MUSIC</button><br>
           <button class="plodon">KEEP WORKING WITHOUT MUSIC</button><br>
           <button class="plodit">KEEP WORKING WITH MUSIC</button><br>
-          <button class="next">CHANGE IMAGE</button><br>
+          <button class="next">CHANGE KITTY</button><br>
           <button class="nocats">I SAID NO KITTENS</button><br>
         </div>
         <object id="cats" data="" type="image/gif">
@@ -34,11 +34,15 @@
         <h2 class="opensetup">Step 1</h2>
         <div class="opensetup">
             <ul>
-              <li>Download the challenge <pre><code class="bash">sudo apt-get install git -y</code></pre></li>
-              <li></li>
+              <li>Download the challenge to Desktop (and install git if needed) then open.<pre><code class="bash">sudo apt-get install git -y
+cd Desktop
+git clone git@github.com:impshum/challenge1.git
+open challenge1
+</code></pre></li>
+              <li>This is the stuff we're playing with.</li>
                 <li>Start XAMPP with a fancy button if you have one. If not...<pre><code class="bash">sudo /opt/lampp/lampp start</code></pre></li>
                 <ul>
-                    <li>Install instructions are <a href="https://www.apachefriends.org" target="_blank">online</a> it if it's not already installed. Or you could...
+                    <li>Install instructions are <a href="https://www.apachefriends.org" target="_blank">online</a> if it's not already installed. Or you could just...
                         <pre><code class="bash">wget https://www.apachefriends.org/xampp-files/7.0.13/xampp-linux-x64-7.0.13-1-installer.run
 sudo chmod 755 xampp-linux-x64-7.0.13-1-installer.run
 sudo ./xampp-linux-x64-7.0.13-1-installer.run</code></pre>
@@ -46,15 +50,16 @@ sudo ./xampp-linux-x64-7.0.13-1-installer.run</code></pre>
                 </ul>
                 <li>Locate our project folder</li>
                 <ul>
-                    <li>Open /opt/lampp/htdocs with nautilus.</li>
+                    <li>Open htdocs with nautilus. <pre><code class="bash">open /opt/lampp/htdocs/</code></pre></li>
                     <li>This is where all our project files go. <span>⚠ NO KITTENS PAST THIS POINT ⚠</span></li>
                     <ul>
                         <li><span class="tip">TIP</span> - Open /opt/lampp/ (go up one) and bookmark htdocs for easy reach.</li>
                     </ul>
-                    <li>Unzip challenge1.zip in htdocs giving us a folder called challenge1 full of yummy stuff for you to fuck with. Woo! <pre><code class="bash">unzip path/to/challenge1.zip -d /opt/lampp/htdocs</code></pre></li>
-                    <li>Do a little dance if you got this far. Yey!</li>
+                    <li>Move the contents of challenge1 into htdocs. <pre><code class="bash">mv challenge1 /opt/lampp/htdocs/</code></pre></li>
+                    <li>Now it's full of yummy stuff for you to fuck with.</li>
                     <li>Now we should be able to access our page at <a href="http://localhost/challenge1/" target="_blank">http://localhost/challenge1/</a></li>
                     <li>And this page at <a href="http://localhost/challenge1/help/" target="_blank">http://localhost/challenge1/help/</a></li>
+                    <li>Do a little dance if you got this far. Yey!</li>
                 </ul>
                 <li class="img">Start Atom <img src="https://raw.githubusercontent.com/zeke/atom-icon/master/old-icon/2.png"></li>
                   <ul>
@@ -138,14 +143,14 @@ sudo ./xampp-linux-x64-7.0.13-1-installer.run</code></pre>
             <ul>
                 <li>Open up action.php in Atom.</li>
                 <li class="php3">Stare at the empty space for a bit.</li>
-                <li>Use your 'Google-Fu' to figure out how to get data into a mySQL database from a form.</li>
+                <li>Use your 'Google-Fu' to figure out how to get data into a MySQL database from a form.</li>
                 <li>If you get stuck I left some hints <a href="#" class="php">here</a>.</li>
                 <li>When you're done take a break by clicking <a href="#" class="break" id="play3">HERE</a>.</li>
             </ul>
             <div class="php">
 
                 <h2>PHP HELP</h2>
-                <p><span class="tip">HINTS - </span><a href="http://www.w3schools.com/php/php_mysql_intro.asp" target="_blank"> #1</a> <a href="http://php.net/manual/en/function.mysql-connect.php" target="_blank"> #2</a>
+                <p><span class="tip">HINTS - </span> Your MySQL a/s/l will probably be localhost root root + COPYPASTA - <a href="http://www.w3schools.com/php/php_mysql_intro.asp" target="_blank"> #1</a> <a href="http://php.net/manual/en/function.mysql-connect.php" target="_blank"> #2</a>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> #3</a>
                 </p>
                 <button class="php">CLOSE</button>

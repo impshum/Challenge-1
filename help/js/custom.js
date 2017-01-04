@@ -2,9 +2,6 @@ $(document).ready(function() {
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
     });
-    $("button.showphp").click(function() {
-        $("div.showphp").slideToggle();
-    });
     $("button.sql").click(function() {
         $("div.sql").slideToggle();
     });
@@ -19,6 +16,21 @@ $(document).ready(function() {
     });
     $("button.sql3").click(function() {
         $("div.sql3").slideToggle();
+    });
+    $("a.php").click(function() {
+        $("div.php").slideToggle();
+    });
+    $("button.php").click(function() {
+        $("div.php").slideToggle();
+    });
+    $("button.php1").click(function() {
+        $("div.php1").slideToggle();
+    });
+    $("button.php2").click(function() {
+        $("div.php2").slideToggle();
+    });
+    $("li.php3").click(function() {
+        $("div.php3").slideToggle();
     });
     $("h2.opensetup").click(function() {
         $('h2.opensetup').toggleClass('onsetup');
@@ -39,21 +51,6 @@ $(document).ready(function() {
     $("h2.openbonus").click(function() {
         $('h2.openbonus').toggleClass('onbonus');
         $("div.openbonus").slideToggle();
-    });
-    $("a.php").click(function() {
-        $("div.php").slideToggle();
-    });
-    $("button.php").click(function() {
-        $("div.php").slideToggle();
-    });
-    $("button.php1").click(function() {
-        $("div.php1").slideToggle();
-    });
-    $("button.php2").click(function() {
-        $("div.php2").slideToggle();
-    });
-    $("li.php3").click(function() {
-        $("div.php3").slideToggle();
     });
 });
 

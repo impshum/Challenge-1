@@ -332,11 +332,11 @@ body.help h2 {
 }
 
 .onsetup::after {
-    content: "- SETUP";
+    content: " - SETUP";
 }
 
 .onsql::after {
-    content: "- SQL";
+    content: " - SQL";
 }
 
 .onphp::after {
@@ -344,9 +344,9 @@ body.help h2 {
 }
 
 .onresult::after {
-    content: "- RESULTS";
+    content: " - RESULTS";
 }
 
 .onbonus::after {
-    content: "- BEER";
+    content: " - BEER";
 }
