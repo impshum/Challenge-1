@@ -1,0 +1,50 @@
+<!-- Hopefully you'll not have to edit anything here. Just the "name='first_name'" and "name='last_name'" of the inputs need to be used in your PHP -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge #1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <form id="register" method="post" action="action.php">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="checkboxOne">
+                <input type="checkbox" value="1" id="checkboxOneInput" name="consent">
+                <label for="checkboxOneInput"></label>
+                <span>Turn off all possible privacy</span>
+            </div>
+            <input id="go" class="btn" type="submit" placeholder="SUBMIT">
+        </form>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $form = $('#register');
+            $form.find(':input[type="submit"]').prop('disabled', true);
+            $form.find(':input').change(function() {
+                var disable = false;
+                $form.find(':input').not('[type="submit"]').each(function(i, el) {
+                    if ($.trim(el.value) === '') {
+                        disable = true;
+                    }
+                });
+                $form.find(':input[type="submit"]').prop('disabled', disable);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

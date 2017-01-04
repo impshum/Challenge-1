@@ -1,0 +1,352 @@
+/* Just CSS styles. No need to edit this */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3.centered, h4.centered {
+    text-align: center;
+}
+
+h4 {
+    margin-top: -15px;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 215, 73, 0.79);
+}
+
+input[type="submit"]:disabled {
+    background: black;
+    opacity: .3;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 260px;
+    margin: 180px auto;
+    padding: 65px 65px 45px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #348baf;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    height: 50px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.btn:hover {
+    height: 50px;
+    background: #2f2f2f;
+    cursor: pointer;
+}
+
+.loading {
+    width: 55%;
+    margin: 0 auto;
+    height: 3px;
+}
+
+.fail {
+    animation: fail 3s;
+}
+
+.success {
+    animation: success 3s;
+}
+
+@keyframes fail {
+    0% {
+        background-color: #001F3F;
+        width: 0;
+    }
+    100% {
+        background-color: #FF4136;
+    }
+}
+
+@keyframes success {
+    0% {
+        background-color: #001F3F;
+        width: 0;
+    }
+    100% {
+        background-color: #00d45a;
+    }
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkboxOne {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    margin: 20px 2px 30px;
+    float: right;
+    position: relative;
+    border-radius: 3px;
+}
+
+.checkboxOne label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background: #ccc;
+}
+
+.checkboxOne input[type=checkbox]:checked+label {
+    left: 27px;
+}
+
+.checkboxOne>span {
+    position: absolute;
+    top: -8px;
+    left: -215px;
+    width: 210px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.checkboxOne input[type=checkbox]:checked+label {
+    background: #26ca28;
+}
+
+
+/*          HELP SECTION               */
+
+body.help {
+    background: url(../help/img/bg1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #eee;
+}
+
+body.help h1, h2, h3, h4 {
+    text-align: left;
+}
+
+body.help h4 {
+    margin: -15px 0 30px;
+    color: rgba(4, 208, 167, 0.9);
+}
+
+button {
+    padding: 5px 10px
+}
+
+ul>li>span {
+    position: relative;
+    color: rgb(198, 0, 0);
+    font-size: 22px;
+    top: 4px;
+}
+
+span.tip {
+    position: relative;
+    font-size: 16px;
+    top: 0;
+    color: yellow;
+}
+
+.conatiner {
+    margin: 80px 90px 0;
+}
+
+div.sql, div.php, div.sql1, div.php1, div.sql2, div.php2, div.sql3, div.php3, div.opensetup, div.opensql, div.openphp, div.openbonus, div.openresult {
+    display: none;
+}
+
+button.sql3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+button.php3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tic {
+    position: relative;
+    top: -80px;
+}
+
+span.legend {
+    color: rgba(4, 208, 167, 0.79);
+}
+
+button.cheat {
+    position: relative;
+    right: -92%;
+    top: 18px;
+    position: relative;
+}
+
+button.close {
+    position: relative;
+    left: -20px;
+    top: 18px;
+}
+
+#timeout {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../help/img/bg2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 9999;
+}
+
+.flow {
+    overflow: hidden;
+}
+
+object#cats {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#cats img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#count {
+    position: fixed;
+    left: 50%;
+    display: block;
+    width: 300px;
+    margin: -35px -150px 0;
+    text-align: center;
+}
+
+#count::before {
+    content: 'Come back in ';
+}
+
+#count::after {
+    content: ' seconds';
+}
+
+.center {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.btns {
+    position: absolute;
+    top: -150px;
+    width: 300px;
+}
+
+button.plod, button.plodon, button.plodit, button.next, button.nocats {
+    width: 220px;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+li.img {
+    margin-bottom: 10px;
+}
+
+li img {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    margin-left: 3px;
+}
+
+ul li:before {
+    content: '* ';
+    color: rgb(219, 4, 53);
+    font-size: 10px;
+    padding-right: 0.5em;
+}
+
+
+
+body.help h2 {
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.onsetup::after {
+    content: "- SETUP";
+}
+
+.onsql::after {
+    content: "- SQL";
+}
+
+.onphp::after {
+    content: "- PHP";
+}
+
+.onresult::after {
+    content: "- RESULTS";
+}
+
+.onbonus::after {
+    content: "- BEER";
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="holp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge #1</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/atom-one-dark.css">
+
+</head>
+
+<body class="help">
+    <div id="timeout">
+        <div class="center">
+          <div class="btns">
+            <h3><span id="count"> - </span></h3>
+          <button class="plod">STOP MUSIC</button><br>
+          <button class="plodon">KEEP WORKING WITHOUT MUSIC</button><br>
+          <button class="plodit">KEEP WORKING WITH MUSIC</button><br>
+          <button class="next">CHANGE IMAGE</button><br>
+          <button class="nocats">I SAID NO KITTENS</button><br>
+        </div>
+        <object id="cats" data="" type="image/gif">
+          <img src="img/fail.png">
+        </object>
+        </div>
+    </div>
+    <div class="conatiner">
+        <h1>Challenge #1</h1>
+
+        <h4>php forms and sql basics</h4>
+
+        <h2 class="opensetup">Step 1</h2>
+        <div class="opensetup">
+            <ul>
+              <li>Download the challenge <pre><code class="bash">sudo apt-get install git -y</code></pre></li>
+              <li></li>
+                <li>Start XAMPP with a fancy button if you have one. If not...<pre><code class="bash">sudo /opt/lampp/lampp start</code></pre></li>
+                <ul>
+                    <li>Install instructions are <a href="https://www.apachefriends.org" target="_blank">online</a> it if it's not already installed. Or you could...
+                        <pre><code class="bash">wget https://www.apachefriends.org/xampp-files/7.0.13/xampp-linux-x64-7.0.13-1-installer.run
+sudo chmod 755 xampp-linux-x64-7.0.13-1-installer.run
+sudo ./xampp-linux-x64-7.0.13-1-installer.run</code></pre>
+                    </li>
+                </ul>
+                <li>Locate our project folder</li>
+                <ul>
+                    <li>Open /opt/lampp/htdocs with nautilus.</li>
+                    <li>This is where all our project files go. <span>⚠ NO KITTENS PAST THIS POINT ⚠</span></li>
+                    <ul>
+                        <li><span class="tip">TIP</span> - Open /opt/lampp/ (go up one) and bookmark htdocs for easy reach.</li>
+                    </ul>
+                    <li>Unzip challenge1.zip in htdocs giving us a folder called challenge1 full of yummy stuff for you to fuck with. Woo! <pre><code class="bash">unzip path/to/challenge1.zip -d /opt/lampp/htdocs</code></pre></li>
+                    <li>Do a little dance if you got this far. Yey!</li>
+                    <li>Now we should be able to access our page at <a href="http://localhost/challenge1/" target="_blank">http://localhost/challenge1/</a></li>
+                    <li>And this page at <a href="http://localhost/challenge1/help/" target="_blank">http://localhost/challenge1/help/</a></li>
+                </ul>
+                <li class="img">Start Atom <img src="https://raw.githubusercontent.com/zeke/atom-icon/master/old-icon/2.png"></li>
+                  <ul>
+                      <li>Download and install Atom <a href="https://atom.io" target="_blank">here</a> if you haven't already.</li>
+                  </ul>
+                <li>Add our project into Atom</li>
+                <ul>
+                    <li>Go to file > Add Project Folder and add our htdocs folder /opt/lampp/htdocs/challenge1/ (if you have a quicker way... do it).</li>
+                    <li>Open index.html</li>
+                    <li>change<pre><code class="php">placeholder="SUBMIT"</code></pre> to<pre><code>placeholder="SUBMIT NOWT"</code></pre></li>
+                    <li>Open action.php</li>
+                    <li>change<pre><code class="php">echo "Silence is golden!";</code></pre> to<pre><code>// echo "Real silence is commented out!";</code></pre></li>
+                    <li>Save both files.</li>
+                    <li>View our changed page at <a href="http://localhost/challenge1" target="_blank">http://localhost/challenge1</a>.</li>
+                </ul>
+                <li>Realise that those edits just teach you how to comment in PHP and get you doing stuff.</li>
+                <li>Take a break. Click <a href="#" class="break" id="play1">HERE</a>.</li>
+            </ul>
+        </div>
+
+        <h2 class="opensql">STEP 2</h2>
+        <div class="opensql">
+            <ul>
+                <li>Open up phpmyadmin at <a href="http://localhost/phpmyadmin" target="_blank">http://localhost/phpmyadmin</a>.</li>
+                <li>Create a database.</li>
+                <li>Create a table inside this database with 4 columns called ID, username, email and password.</li>
+                <ul>
+                    <li>The ID column needs to assign a unique number to each entry (auto increment).</li>
+                    <li>The other columns are variable characters at whatever length you seem suitable (anything up to 255 will do).</li>
+                    <li>The primary key needs to be ID.<pre><code class="bash">+-----+-------------+-------------+---------------+
+| ID  |   username  |    email    |    password   |
++-----+-------------+-------------+---------------+
+|  1  |      a      |      @      |       *       |
+|  2  |      b      |      @      |       *       |
+|  3  |      c      |      @      |       *       |
+
+</code></pre></li>
+                    <li>Try researching examples online first but if you get really frustrated a template is <a href="#" class="sql">here</a>.</li>
+                    <li>When you're done take a break. Click <a href="#" class="break" id="play2">HERE</a>.</li>
+                </ul>
+            </ul>
+            <div class="sql">
+                <h2>SQL HELP</h2>
+                <p>Rreplace blah blah with your code.</p>
+                <pre>
+             <code class="sql">CREATE TABLE users (
+  ID int NOT NULL AUTO_INCREMENT,
+  blah blah,
+  blah blah,
+  PRIMARY KEY (ID)
+)</code>
+            </pre>
+                <br>
+                <button class="sql">CLOSE</button>
+                <button class="sql1">CHEAT</button>
+                <div class="sql1">
+                    Are you sure? Have you given up hope?
+                    <button class="sql2">YES</button><button class="sql1">NO</button>
+                    <div class="sql2">
+                        Seriously? You know you're cheating right?
+                        <button class="sql3">HI</button><button class="sql2">YES</button> Stick around here for a bit. You'll stumble upon it eventually.
+                        <div class="sql3">
+                            <p>Oh well... Here you go.</p>
+                            <pre>
+                         <code class="sql">CREATE TABLE users (
+  ID int NOT NULL AUTO_INCREMENT,
+  username varchar(30),
+  email varchar(50),
+  password varchar(255),
+  PRIMARY KEY (ID)
+)</code>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="openphp">STEP 3</h2>
+        <div class="openphp">
+            <ul>
+                <li>Open up action.php in Atom.</li>
+                <li class="php3">Stare at the empty space for a bit.</li>
+                <li>Use your 'Google-Fu' to figure out how to get data into a mySQL database from a form.</li>
+                <li>If you get stuck I left some hints <a href="#" class="php">here</a>.</li>
+                <li>When you're done take a break by clicking <a href="#" class="break" id="play3">HERE</a>.</li>
+            </ul>
+            <div class="php">
+
+                <h2>PHP HELP</h2>
+                <p><span class="tip">HINTS - </span><a href="http://www.w3schools.com/php/php_mysql_intro.asp" target="_blank"> #1</a> <a href="http://php.net/manual/en/function.mysql-connect.php" target="_blank"> #2</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> #3</a>
+                </p>
+                <button class="php">CLOSE</button>
+                <button class="php1">CHEAT</button>
+                <div class="php1">
+                    Are you sure? Have you given up all hope?
+                    <button class="php2">YES</button><button class="php1">NO</button>
+                    <div class="php2">
+                        You're going to have to work hard to find this one.
+                        <div class="php3">
+                            <p>Oh well... Here you go.</p>
+                            <pre>
+     <code class="php">
+$connect = mysql_connect("localhost", "root", "root"); // Database login details - ("location", "user", "pass")
+
+if (!$connect) {
+    die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db("___", $connect); // enter the name of your database
+
+$data="INSERT INTO ___ (username, email, password) VALUES ('$_POST[username]','$_POST[email]','$_POST[password]')"; // enter the name of your table
+
+if (!mysql_query($data, $connect)) {
+    die('Error: ' . mysql_error());
+}
+
+mysql_close($connect); // Run for the hills
+
+echo "Record saved to database";
+      </code>
+      </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="openresult">STEP 4</h2>
+        <div class="openresult">
+            <p>You've got this far. Let's see what's left to do.</p>
+            <ul>
+                <li>Save your project.</li>
+                <li>Make a backup your project if you're going to mess around with it after it works.</li>
+                <li>Grab a beer.</li>
+                <li>Shut down XAMPP.<pre><code class="bash">sudo /opt/lampp/lampp stop</code></pre></li>
+                <li>Click <a href="#" class="break" id="play4">HERE</a>.</li>
+            </ul>
+        </div>
+
+        <h2 class="openbonus">BONUS</h2>
+        <div class="openbonus">
+            <ul>
+                <li>Add a firstname and secondname to the form and database = 🍺🍺</li>
+                <li>Use success.html = 🍺🍺</li>
+                <li>Add any type of validation and use fail.html = 🍺🍺🍺</li>
+                <li>Hash and salt passwords with sha256 = 🍺🍺🍺🍺</li>
+                <li>Add something to this tutorial = 🍺</li>
+                <li>Funny things = 🍺</li>
+                <ul>
+        </div>
+
+
+    </div>
+    <div id="foot">&nbsp;</div>
+    <script src="js/jquery3.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
