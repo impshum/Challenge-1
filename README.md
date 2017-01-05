@@ -15,6 +15,6 @@ open http://IP:8888/kris/docs
 
 ###Step 0 (for everyone else)
 
-Download it. Try to learn.
+Download/clone it. Load /docs/index.html with Bowser!
 
 You probably shouldn't use this in production.
