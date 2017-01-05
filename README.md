@@ -3,4 +3,4 @@ PHP form and SQL basics
 
 Made for a friend to get started with stuff.
 
-https://impshum.github.io/challenge1/.
+https://impshum.github.io/challenge1
