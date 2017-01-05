@@ -1,4 +1,4 @@
 # challenge1
 PHP form and SQL basics
 
-Made for a friend to get started with stuff.
+Ask me for my IP address and go to http://<IP>:8888/kris/docs
